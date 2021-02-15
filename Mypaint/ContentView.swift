@@ -20,7 +20,7 @@ struct ContentView: View {
             let deviceTraitStatus = DeviceTraitStatus(hSizeClass: self.hSizeClass, vSizeClass: self.vSizeClass)
                 switch deviceTraitStatus {
                     case .wRhR, .wChR:
-                     VStack(spacing:nil){
+                     VStack{
                        DrawingArea(isDrawing: $isDrawing,
                                      drawers: $drawers,
                                     colorSet: $colorSet,
@@ -29,7 +29,7 @@ struct ContentView: View {
                         self.isDrawing = Drawer()
                         self.drawers = [Drawer]()
                         }, label: {
-                           Text("C")
+                            Image(systemName: "clear")
                             .font(.largeTitle)
                             .foregroundColor(.black)
                             .padding(.all)
@@ -37,9 +37,9 @@ struct ContentView: View {
                             .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
                             .cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
                         })
-                        }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        }
                     case .wRhC, .wChC:
-                        VStack(spacing:nil){
+                        ZStack{
                           DrawingArea(isDrawing: $isDrawing,
                                         drawers: $drawers,
                                        colorSet: $colorSet,
@@ -48,15 +48,16 @@ struct ContentView: View {
                            self.isDrawing = Drawer()
                            self.drawers = [Drawer]()
                            }, label: {
-                              Text("C")
+                             // Text("C")
+                              Image(systemName: "clear")
                                .font(.largeTitle)
                                .foregroundColor(.black)
-                               .padding(.all)
+                                .padding(.all)
                                .frame(width: 50.0, height: 50.0)
                                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
                                .cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
-                           })
-                           }.padding([.top], 16.0)
+                           }).padding(.trailing)
+                        }.padding([.top, .bottom, .trailing], 30.0)
                     }
     }
 }
