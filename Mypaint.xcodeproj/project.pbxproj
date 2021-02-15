@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE0EA2E325DAAD9300B5EFA7 /* DeviceTraitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0EA2E225DAAD9300B5EFA7 /* DeviceTraitStatus.swift */; };
 		FE366D9525AC734A0058FABD /* MypaintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE366D9425AC734A0058FABD /* MypaintApp.swift */; };
 		FE366D9725AC734A0058FABD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE366D9625AC734A0058FABD /* ContentView.swift */; };
 		FE366D9925AC734B0058FABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE366D9825AC734B0058FABD /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE0EA2E225DAAD9300B5EFA7 /* DeviceTraitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTraitStatus.swift; sourceTree = "<group>"; };
 		FE366D9125AC734A0058FABD /* Mypaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mypaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE366D9425AC734A0058FABD /* MypaintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypaintApp.swift; sourceTree = "<group>"; };
 		FE366D9625AC734A0058FABD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
@@ -54,6 +56,7 @@
 			children = (
 				FE366D9425AC734A0058FABD /* MypaintApp.swift */,
 				FE366D9625AC734A0058FABD /* ContentView.swift */,
+				FE0EA2E225DAAD9300B5EFA7 /* DeviceTraitStatus.swift */,
 				FE366D9825AC734B0058FABD /* Assets.xcassets */,
 				FE366D9D25AC734B0058FABD /* Info.plist */,
 				FE366D9A25AC734B0058FABD /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0EA2E325DAAD9300B5EFA7 /* DeviceTraitStatus.swift in Sources */,
 				FE366D9725AC734A0058FABD /* ContentView.swift in Sources */,
 				FE366D9525AC734A0058FABD /* MypaintApp.swift in Sources */,
 			);
